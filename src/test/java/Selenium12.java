@@ -179,10 +179,10 @@ public class Selenium12 {
             isButtonPresent = logOutButtonAfterLoggingOut.isDisplayed();
         } catch (Exception e) {
             // Catch blok moze biti prazan, obavezan je samo parametar Exception da postoji
-            System.out.println("PORUKA IZ KONZOLE " + e + "....KRAJ.....");
         }
 
         Assert.assertFalse(isButtonPresent);
+        Assert.assertEquals(driver.getCurrentUrl(), "https://practicetestautomation.com/practice-test-login/");
 
     }
 
