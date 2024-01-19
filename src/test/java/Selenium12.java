@@ -190,8 +190,8 @@ public class Selenium12 {
     public void tearDown() {
         // driver.quit smo stavili u AfterMethod jer zelimo da zatvorimo svaki browser kada se  test zavrsi
         // Ako bismo stavili quit u AfterClass onda bi se samo poslednji browser zatvorio
-        driver.manage().deleteAllCookies();
-        driver.quit();
+        //driver.manage().deleteAllCookies();
+        //driver.quit();
     }
 
 
